@@ -9,7 +9,7 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #2e2e2e; /* Fundo escuro */
+            background-color: #2e2e2e;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -18,7 +18,7 @@
         }
 
         .container {
-            background-color: #1a1a1a; /* Fundo mais escuro */
+            background-color: #1a1a1a;
             width: 100%;
             max-width: 900px;
             padding: 50px;
@@ -35,7 +35,7 @@
         .header {
             font-size: 35px;
             font-weight: bold;
-            color: #B0B0B0; /* Cinza metálico */
+            color: #B0B0B0;
             margin-bottom: 20px;
         }
 
@@ -46,7 +46,7 @@
         }
 
         .info-box {
-            background-color: #333333; /* Fundo preto */
+            background-color: #333333;
             padding: 30px;
             margin: 20px 0;
             border-radius: 10px;
@@ -55,38 +55,35 @@
             align-items: center;
             justify-content: flex-start;
             color: #fff;
-            position: relative; /* Para adicionar a sobreposição */
-            overflow: hidden; /* Evita que a imagem ultrapasse os limites do contêiner */
+            position: relative;
+            overflow: hidden;
         }
 
-        /* Ajuste das imagens: aumentar o zoom */
         .info-box img {
-            width: 350px; /* Aumento do tamanho das imagens para 350px */
+            width: 350px;
             height: 350px;
             margin-right: 30px;
-            object-fit: cover; /* Garantir que a imagem fique inteira sem distorcer */
+            object-fit: cover;
             border-radius: 10px;
-            transition: transform 0.3s ease; /* Suaviza o efeito de zoom */
+            transition: transform 0.3s ease;
         }
 
-        /* Ao passar o mouse, dá zoom nas imagens */
         .info-box img:hover {
-            transform: scale(1.1); /* Aumenta a imagem em 10% ao passar o mouse */
+            transform: scale(1.1);
         }
 
-        /* Garantir que o texto se destaque sem sobreposição */
         .info-box div {
-            font-size: 28px; /* Tamanho da fonte ajustado */
+            font-size: 28px;
             text-align: left;
             position: relative;
             z-index: 1;
-            color: #fff; /* Garantindo que o texto fique branco */
-            font-weight: bold; /* Deixando o texto mais forte */
-            line-height: 1.5; /* Garantindo mais espaço entre as linhas para legibilidade */
+            color: #fff;
+            font-weight: bold;
+            line-height: 1.5;
         }
 
         .button {
-            background-color: #4169E1; /* Azul Royal */
+            background-color: #4169E1;
             color: #fff;
             font-size: 20px;
             padding: 18px 40px;
@@ -96,12 +93,12 @@
             text-decoration: none;
             margin-top: 40px;
             transition: background-color 0.3s ease, transform 0.3s ease;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Sombra suave */
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
 
         .button:hover {
-            background-color: #3152A2; /* Azul Royal mais escuro */
-            transform: scale(1.05); /* Efeito de aumento ao passar o mouse */
+            background-color: #3152A2;
+            transform: scale(1.05);
         }
 
         .footer {
@@ -111,16 +108,59 @@
         }
 
         .footer a {
-            color: #FFD700; /* Dourado mais forte */
+            color: #FFD700;
             text-decoration: none;
         }
 
+        /* Responsividade para celular */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+                min-height: auto;
+            }
+
+            .container {
+                padding: 20px;
+                margin: 10px;
+            }
+
+            .info-box {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .info-box img {
+                width: 80%;
+                height: auto;
+                margin: 0 0 20px 0;
+            }
+
+            .info-box div {
+                font-size: 20px;
+                text-align: center;
+            }
+
+            .header {
+                font-size: 28px;
+            }
+
+            .subheader {
+                font-size: 18px;
+            }
+
+            .button {
+                width: 100%;
+                font-size: 18px;
+                padding: 15px;
+            }
+        }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <img src="imagem.png" alt="Logo da Empresa" class="logo">
+        <img src="logo.png" alt="Logo da Empresa" class="logo">
 
         <div class="header">
             Precisa de Dinheiro Extra?
@@ -131,7 +171,7 @@
 
         <!-- Empréstimo com Garantia de Veículo Pesado -->
         <div class="info-box">
-            <img src="imagem.png1.txt" alt="Empréstimo com Garantia">
+            <img src="imagem1.png" alt="Empréstimo com Garantia">
             <div>
                 <strong>Empréstimo com Garantia de Veículo Pesado:</strong><br>
                 Refinanciamento de caminhões em até 48x.
@@ -140,7 +180,7 @@
 
         <!-- Financiamento de Veículos Pesados -->
         <div class="info-box">
-            <img src="imagem.png2.txt" alt="Financiamento de Veículos Pesados">
+            <img src="imagem2.png" alt="Financiamento de Veículos Pesados">
             <div>
                 <strong>Financiamento de Veículos Pesados:</strong><br>
                 Crédito para veículos pesados em até 60x.
@@ -149,7 +189,7 @@
 
         <!-- Financiamento de Implementos -->
         <div class="info-box">
-            <img src="imagem.png3.txt" alt="Financiamento de Implementos">
+            <img src="imagem3.png" alt="Financiamento de Implementos">
             <div>
                 <strong>Financiamento de Implementos:</strong><br>
                 Crédito para compra de implementos em até 48x.
