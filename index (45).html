@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empréstimos e Financiamentos para Veículos Pesados</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #2e2e2e; /* Fundo escuro */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            background-color: #1a1a1a; /* Fundo mais escuro */
+            width: 100%;
+            max-width: 900px;
+            padding: 50px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            margin: 20px;
+        }
+
+        .logo {
+            max-width: 250px;
+            margin-bottom: 30px;
+        }
+
+        .header {
+            font-size: 35px;
+            font-weight: bold;
+            color: #B0B0B0; /* Cinza metálico */
+            margin-bottom: 20px;
+        }
+
+        .subheader {
+            font-size: 22px;
+            color: #b0b0b0;
+            margin-bottom: 40px;
+        }
+
+        .info-box {
+            background-color: #333333; /* Fundo preto */
+            padding: 30px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            color: #fff;
+            position: relative; /* Para adicionar a sobreposição */
+            overflow: hidden; /* Evita que a imagem ultrapasse os limites do contêiner */
+        }
+
+        /* Ajuste das imagens: aumentar o zoom */
+        .info-box img {
+            width: 350px; /* Aumento do tamanho das imagens para 350px */
+            height: 350px;
+            margin-right: 30px;
+            object-fit: cover; /* Garantir que a imagem fique inteira sem distorcer */
+            border-radius: 10px;
+            transition: transform 0.3s ease; /* Suaviza o efeito de zoom */
+        }
+
+        /* Ao passar o mouse, dá zoom nas imagens */
+        .info-box img:hover {
+            transform: scale(1.1); /* Aumenta a imagem em 10% ao passar o mouse */
+        }
+
+        /* Garantir que o texto se destaque sem sobreposição */
+        .info-box div {
+            font-size: 28px; /* Tamanho da fonte ajustado */
+            text-align: left;
+            position: relative;
+            z-index: 1;
+            color: #fff; /* Garantindo que o texto fique branco */
+            font-weight: bold; /* Deixando o texto mais forte */
+            line-height: 1.5; /* Garantindo mais espaço entre as linhas para legibilidade */
+        }
+
+        .button {
+            background-color: #4169E1; /* Azul Royal */
+            color: #fff;
+            font-size: 20px;
+            padding: 18px 40px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            margin-top: 40px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Sombra suave */
+        }
+
+        .button:hover {
+            background-color: #3152A2; /* Azul Royal mais escuro */
+            transform: scale(1.05); /* Efeito de aumento ao passar o mouse */
+        }
+
+        .footer {
+            font-size: 16px;
+            color: #888;
+            margin-top: 40px;
+        }
+
+        .footer a {
+            color: #FFD700; /* Dourado mais forte */
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="imagem.png" alt="Logo da Empresa" class="logo">
+
+        <div class="header">
+            Precisa de Dinheiro Extra?
+        </div>
+        <div class="subheader">
+            Conte com o Empréstimo e Financiamento de Veículos Pesados! Rápido, fácil e com parcelas fixas!
+        </div>
+
+        <!-- Empréstimo com Garantia de Veículo Pesado -->
+        <div class="info-box">
+            <img src="imagem.png1.txt" alt="Empréstimo com Garantia">
+            <div>
+                <strong>Empréstimo com Garantia de Veículo Pesado:</strong><br>
+                Refinanciamento de caminhões em até 48x.
+            </div>
+        </div>
+
+        <!-- Financiamento de Veículos Pesados -->
+        <div class="info-box">
+            <img src="imagem.png2.txt" alt="Financiamento de Veículos Pesados">
+            <div>
+                <strong>Financiamento de Veículos Pesados:</strong><br>
+                Crédito para veículos pesados em até 60x.
+            </div>
+        </div>
+
+        <!-- Financiamento de Implementos -->
+        <div class="info-box">
+            <img src="imagem.png3.txt" alt="Financiamento de Implementos">
+            <div>
+                <strong>Financiamento de Implementos:</strong><br>
+                Crédito para compra de implementos em até 48x.
+            </div>
+        </div>
+
+        <!-- Botão WhatsApp -->
+        <a href="https://wa.me/c/554388489342" class="button">Fale Conosco no WhatsApp</a>
+
+        <div class="footer">
+            *Sujeito a análise. Consulte condições.
+        </div>
+    </div>
+
+</body>
+</html>
